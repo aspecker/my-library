@@ -1,6 +1,6 @@
-import { makeExecutableSchema } from 'graphql-tools';
+const { makeExecutableSchema } = require('graphql-tools');
 
-import { resolvers } from './resolvers';
+const  resolvers  =  require('./resolvers');
 
 const typeDefs = `
     type Channel {
@@ -23,4 +23,4 @@ const typeDefs = `
 
 const schema = makeExecutableSchema ({typeDefs, resolvers});
 
-export default schema;
+module.exports = schema;

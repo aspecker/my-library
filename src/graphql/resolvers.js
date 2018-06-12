@@ -4,6 +4,10 @@ const channels = [{
     }, {
       id: 2,
       name: 'basketball'
+    },
+    {
+      id: 3,
+      name: 'scuba diving'
     }];
 
 let nextId = 3;
@@ -22,4 +26,4 @@ const resolvers = {
     }
 }
 
-export default resolvers;
+module.exports = resolvers;
